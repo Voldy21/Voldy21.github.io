@@ -27,11 +27,9 @@ p{
 
 a{
     text-decoration: none;
-    color: white;
-    background: #4a89ca;
     display: block;
     width: 70%;
-    padding: 10px 0;
+    padding:  3%;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 10px;
@@ -60,8 +58,6 @@ a{
     padding-top: 20px;
     padding-bottom: 50px;
     text-align: center;
-
-    
 }
 
 .name{

@@ -1,0 +1,63 @@
+/*----------------------
+ Photo Overlay Transition
+-----------------------*/
+
+
+.picture-overlay{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .3s;
+    
+}
+
+.picture-overlay:hover{
+    opacity: 1;
+}
+
+
+/*----------------------
+ Button Transitions
+-----------------------*/
+
+/* All button transitions*/
+.button{
+    color: #fff;
+    background: #4a89ca;
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    transition-duration: .5s;
+    transition-property: border-radius;
+    
+}
+
+.button:hover{
+    border-radius: 10px;
+    background: rgb(107, 107, 246);
+}
+
+/*picture overlay opacity delay*/
+.picture-overlay .button{
+    opacity: 0;
+    margin-top: 0;
+    background: rgba(74,137,202,.7);
+    transition-property: opacity, background, box-shadow;
+    transition-duration: .5s;
+    transition-delay: .2s, .3s, 0s;
+}
+
+.picture-overlay:hover .button{
+    opacity: 1;
+    
+}
+
+.picture-overlay .button:hover{
+    background: rgba(74,137,202,1);
+    box-shadow: 0 0 0 3px rgba(255,255,255,.6);
+
+}
+
+
+.button:active,
+.picture-overlay .button:active
+{
+    background: rgb(18, 93, 18);
+}
