@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    min-height: 100vh;
+}
+
+.item{
+    width: auto;
+    flex-grow: 1;
+}
+
+.item:nth-child(even){
+    background-color: #ccc;
+}

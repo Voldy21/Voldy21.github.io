@@ -1,0 +1,123 @@
+
+/*---------------------
+    BASE LAYOUT
+-----------------------*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font: 1em/1.5 'Varela Round', sans-serif;
+    color: #373737;
+	background: #eaeaea;
+    margin: 0;
+    line-height: 2;
+
+    
+}
+
+h1{
+    color: white;
+    font: em;
+    text-align: center;
+}
+
+h2{
+    font: 1em;
+}
+
+
+span{
+    font-size: 3em;
+    color: white;
+    padding-top: 100px;
+    display: block;
+    font-weight: 800;
+    background: -webkit-linear-gradient(rgb(58, 45, 245), rgb(107, 27, 245));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 1.7em;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    background: #4a89ca;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    transition: .5s background;
+}
+
+.link:hover{
+    background: rgb(42, 42, 248);
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/*Layout*/
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-auto-rows: 300px auto 100px;
+}
+
+.header{
+    text-align: center;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    background: #ccc;
+    padding: 30px;
+    font-size: 1.3em;
+}
+
+/*Design*/
+
+
+.header{
+    background-image: url("/img/banner.jpg");
+    background-size: cover;
+
+}
+
+
+/* Two Columns */
+@media (min-width: 769px){
+    .links{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .item{
+        width: 50%;
+    }
+}
+/* Three Columns */
+@media (min-width: 1000px){
+
+}
